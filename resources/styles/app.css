@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.task-menu-header .menu-task-logo {
+  height: inherit;
+}
+.menu-task-list ul {
+  display: none;
+}
+.menu-task-list li[data-item]:hover > ul {
+  display: block;
+}
+
