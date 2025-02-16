@@ -12,4 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
       megaMenu.classList.add('hidden');
     }
   });
+
+  // Maybe add this JS to prevent default behavior for submenu links.
+  document.querySelectorAll('#task-menu-dropdown li[data-item]').forEach((menuItem) => {
+    const link = menuItem.querySelector('a');
+    const submenu = menuItem.querySelector('ul');
+
+    if (submenu) {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+      });
+    }
+  });
+
 });
