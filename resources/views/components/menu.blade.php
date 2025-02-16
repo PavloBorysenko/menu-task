@@ -18,7 +18,7 @@
           @else
             <p class="text-sm text-gray-500 px-4">{{ esc_html__('Please set up the menu in the admin panel', 'menu-task') }}</p>
           @endif
-          <div class="w-[386px] h-[292px] bg-gray-100 flex items-center justify-center">
+          <div class="hidden md:flex w-full max-w-[386px] h-auto aspect-[4/3] bg-gray-100 items-center justify-cente">
             @if ($megaMenuImage)
               <img
                   src="{{ $megaMenuImage }}"
