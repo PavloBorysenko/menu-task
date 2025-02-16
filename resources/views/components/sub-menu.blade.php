@@ -15,7 +15,7 @@
   </a>
 
   @if($hasChildren)
-    <ul class="menu-task-list w-64 absolute left-full top-0 bg-white shadow-md hidden">
+    <ul class="menu-task-list min-w-[16rem] w-auto absolute left-full top-0 bg-white shadow-md hidden">
       @foreach($item['children'] as $child)
         <x-sub-menu :item="$child" />
       @endforeach

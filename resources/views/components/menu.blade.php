@@ -10,7 +10,7 @@
       <div id="task-menu-dropdown"  class="absolute inset-x-0 top-full w-screen bg-white shadow-md hidden">
         <div class="mega-menu-content w-3/4 mx-auto py-4 flex justify-between items-start">
           @if (!empty($menuItems))
-            <ul class="menu-task-list w-64 font-normal">
+            <ul class="menu-task-list min-w-[16rem] w-auto font-normal">
               @foreach ($menuItems as $item)
                 <x-sub-menu :item="$item" />
               @endforeach
