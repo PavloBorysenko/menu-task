@@ -1,8 +1,8 @@
-<nav class="bg-[#201E50] h-10">
+<nav class="bg-[#201E50] h-10 font-normal">
   <div class="flex flex-col md:flex-row items-center justify-between relative">
     <div class="relative w-full">
       <div class="w-3/4 mx-auto ">
-        <button id="task-menu-button"  class="text-white px-0 py-2 flex items-center font-normal">
+        <button id="task-menu-button"  class="text-white px-0 py-2 flex items-center">
           <span class="dashicons dashicons-editor-ul mr-2"></span>
           {{ esc_html__('Products', 'menu-task') }}
         </button>
@@ -10,7 +10,7 @@
       <div id="task-menu-dropdown"  class="absolute inset-x-0 top-full w-screen bg-white shadow-md hidden">
         <div class="mega-menu-content w-3/4 mx-auto py-4 flex justify-between items-start">
           @if (!empty($menuItems))
-            <ul class="menu-task-list min-w-[16rem] w-auto font-normal">
+            <ul class="menu-task-list min-w-[16rem] w-auto">
               @foreach ($menuItems as $item)
                 <x-sub-menu :item="$item" />
               @endforeach

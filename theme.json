@@ -1274,8 +1274,8 @@
       "customFontSize": false,
       "fontFamilies": [
         {
-          "fontFamily": "ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
-          "name": "Ui-sans-serif",
+          "fontFamily": "Montserrat,sans-serif",
+          "name": "Montserrat",
           "slug": "sans"
         },
         {

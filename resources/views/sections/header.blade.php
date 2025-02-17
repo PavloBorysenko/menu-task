@@ -1,4 +1,4 @@
-<header class="bg-[#201E50] border-b border-[#4D4E7C] task-menu-header">
+<header class="bg-[#201E50] border-b border-[#4D4E7C] task-menu-header font-sans">
   <div class="container mx-auto w-3/4 flex flex-col md:flex-row items-center justify-between py-4">
     <div class="flex items-center flex-1 gap-8 w-full md:w-auto md:mr-8 mb-4 md:mb-0">
       {{-- Logo --}}

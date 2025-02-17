@@ -45,7 +45,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'primary_navigation' => __('Primary Navigation', 'menu-task'),
     ]);
 
     /**
@@ -117,7 +117,7 @@ add_action('after_setup_theme', function () {
     add_action('customize_register', function($wp_customize) {
 
         $wp_customize->add_section('mega_menu_image_section', [
-            'title'      => __('Mega Menu Image', 'sage'),
+            'title'      => __('Mega Menu Image', 'menu-task'),
             'panel'      => 'nav_menus',
             'priority'   => 160,
         ]);
@@ -132,7 +132,7 @@ add_action('after_setup_theme', function () {
             $wp_customize,
             'mega_menu_image_control',
             [
-                'label'    => __('Mega Menu Image', 'sage'),
+                'label'    => __('Mega Menu Image', 'menu-task'),
                 'section'  => 'mega_menu_image_section',
                 'settings' => 'mega_menu_image',
             ]
@@ -156,12 +156,12 @@ add_action('widgets_init', function () {
     ];
 
     register_sidebar([
-        'name' => __('Primary', 'sage'),
+        'name' => __('Primary', 'menu-task'),
         'id' => 'sidebar-primary',
     ] + $config);
 
     register_sidebar([
-        'name' => __('Footer', 'sage'),
+        'name' => __('Footer', 'menu-task'),
         'id' => 'sidebar-footer',
     ] + $config);
 });

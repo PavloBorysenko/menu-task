@@ -4,6 +4,9 @@ const config = {
   theme: {
     extend: {
       colors: {}, // Extend Tailwind's default colors
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],
