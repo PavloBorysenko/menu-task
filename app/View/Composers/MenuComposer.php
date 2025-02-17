@@ -71,8 +71,7 @@ class MenuComposer extends Composer {
 		// Convert to tree.
 		$menu_tree = $this->buildMenuTree( $menu_items );
 
-		// Get the root items.
-		return array_filter( $menu_tree, fn( $item ) => 0 == $item['parent_id'] );
+		return $menu_tree;
 	}
 
 	/**
@@ -100,6 +99,7 @@ class MenuComposer extends Composer {
 			}
 		}
 
-		return $menu_tree;
+        // Get the root items.
+		return array_filter( $menu_tree, fn( $item ) => 0 == $item['parent_id'] );
 	}
 }
